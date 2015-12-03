@@ -5,10 +5,15 @@
  */
 package com.helloworld_interfaces;
 
+import javax.ejb.EJB;
+import javax.ejb.Remote;
 /**
  *
  * @author RODOLFO ROCHA
  */
+@Remote
 public interface HelloWorld_Interface {
-    void exibirMensagem(String nome);
+    
+    public abstract String exibirMensagem(String nome);
+
 }
